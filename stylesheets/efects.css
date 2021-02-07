@@ -86,8 +86,8 @@
   display: block;
   width: 30px;
   height: 30px;
-  border-bottom: 5px solid #2c2e8d;
-  border-right: 5px solid #134570;
+  border-bottom: 5px solid #0a1b52;
+  border-right: 5px solid #0a1b52;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -172,7 +172,7 @@ nav {
 }
 
 .a-menu > a:hover {
-  background-color: #631818;
+  background-color: #0a1b52;
 }
 
 .drop li {

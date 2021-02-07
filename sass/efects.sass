@@ -1,0 +1,322 @@
+.slideRight
+  animation-name: slideRight
+  -webkit-animation-name: slideRight
+  animation-duration: 2s
+  -webkit-animation-duration: 3s
+  animation-timing-function: ease-in-out
+  -webkit-animation-timing-function: ease-in-out
+  visibility: visible !important
+
+@keyframes slideRight
+  0%
+    transform: translateX(-150%)
+    opacity: 0.2
+
+  50%
+    transform: translateX(8%)
+    opacity: 0.6
+
+  100%
+    transform: translateX(0%)
+
+@-webkit-keyframes slideRight
+  0%
+    -webkit-transform: translateX(-150%)
+
+  50%
+    -webkit-transform: translateX(8%)
+
+  100%
+    -webkit-transform: translateX(0%)
+
+.slideLeft
+  animation-name: slideLeft
+  -webkit-animation-name: slideLeft
+  animation-duration: 2s
+  -webkit-animation-duration: 3s
+  animation-timing-function: ease-in-out
+  -webkit-animation-timing-function: ease-in-out
+  visibility: visible !important
+
+@keyframes slideLeft
+  0%
+    transform: translateX(150%)
+    opacity: 0.2
+
+  50%
+    transform: translateX(-8%)
+    opacity: 0.6
+
+  100%
+    transform: translateX(0%)
+
+@-webkit-keyframes slideLeft
+  0%
+    -webkit-transform: translateX(150%)
+
+  50%
+    -webkit-transform: translateX(-8%)
+
+  100%
+    -webkit-transform: translateX(0%)
+
+
+/** Стрелка вниз **/
+.arrow-down
+  margin: 30px
+
+
+  span
+    
+    display: block
+    width: 30px
+    height: 30px
+    border-bottom: 5px solid #2c2e8d
+    border-right: 5px solid #134570
+    transform: rotate(45deg)
+    margin: -16px
+    animation: arrow-down 2s infinite
+
+    &:nth-child(2)
+      animation-delay: -0.2s
+
+    &:nth-child(3)
+      animation-delay: -0.4s
+
+@keyframes arrow-down
+  
+  0%
+    opacity: 0
+    transform: rotate(45deg) translate(-20px, -20px)
+
+  50%
+    opacity: 1
+
+  100%
+    opacity: 0
+    transform: rotate(45deg) translate(20px, 20px)
+
+/** main menu **/
+ul
+  list-style: none
+
+nav
+  height: 40px
+  margin: 40px auto
+
+  text-align: center
+  border-radius: 4px
+
+.main
+  display: flex
+  justify-content: center
+
+.a-menu>a
+  text-decoration: none
+  color: #ffe
+  text-transform: capitalize
+  display: block
+  padding: 10px 15px
+  font-size: 16px
+
+  &:hover
+    background-color: #631818
+
+.drop li
+  opacity: 0
+  transform-origin: top center
+
+  .a-menu>a
+    background-color: rgba(23, 23, 50, 0.7)
+    padding: 10px 0
+
+/*------------- menu1 animation -------------------
+
+.main li:hover
+  .menu1 li
+    &:first-of-type
+      animation: menu1 0.3s ease-in-out forwards
+      animation-delay: 0.3s
+
+    &:nth-of-type(2)
+      animation: menu1 0.3s ease-in-out forwards
+      animation-delay: 0.6s
+
+    &:nth-of-type(3)
+      animation: menu1 0.3s ease-in-out forwards
+      animation-delay: 0.9s
+
+    &:last-of-type
+      animation: menu1 0.3s ease-in-out forwards
+      animation-delay: 1.2s
+
+  .menu2 li
+    &:first-of-type
+      animation: menu2 0.3s ease-in-out forwards
+      animation-delay: 0.3s
+
+    &:nth-of-type(2)
+      animation: menu2 0.3s ease-in-out forwards
+      animation-delay: 0.6s
+
+    &:nth-of-type(3)
+      animation: menu2 0.3s ease-in-out forwards
+      animation-delay: 0.9s
+
+    &:last-of-type
+      animation: menu2 0.3s ease-in-out forwards
+      animation-delay: 1.2s
+
+  .menu3 li
+    &:first-of-type
+      animation: menu3 0.3s ease-in-out forwards
+      animation-delay: 0.3s
+
+    &:nth-of-type(2)
+      animation: menu3 0.3s ease-in-out forwards
+      animation-delay: 0.6s
+
+    &:nth-of-type(3)
+      animation: menu3 0.3s ease-in-out forwards
+      animation-delay: 0.9s
+
+    &:last-of-type
+      animation: menu3 0.3s ease-in-out forwards
+      animation-delay: 1.2s
+
+  .menu4 li
+    &:first-of-type
+      animation: menu4 0.3s ease-in-out forwards
+      animation-delay: 0.3s
+
+    &:nth-of-type(2)
+      animation: menu4 0.3s ease-in-out forwards
+      animation-delay: 0.6s
+
+    &:nth-of-type(3)
+      animation: menu4 0.3s ease-in-out forwards
+      animation-delay: 0.9s
+
+    &:last-of-type
+      animation: menu4 0.3s ease-in-out forwards
+      animation-delay: 1.2s
+
+  .menu5 li
+    &:first-of-type
+      animation: menu5 0.3s ease-in-out forwards
+      animation-delay: 0.3s
+
+    &:nth-of-type(2)
+      animation: menu5 0.3s ease-in-out forwards
+      animation-delay: 0.6s
+
+    &:nth-of-type(3)
+      animation: menu5 0.3s ease-in-out forwards
+      animation-delay: 0.9s
+
+    &:last-of-type
+      animation: menu5 0.3s ease-in-out forwards
+      animation-delay: 1.2s
+
+  .menu6 li
+    &:first-of-type
+      animation: menu6 0.3s ease-in-out forwards
+      animation-delay: 0.2s
+
+    &:nth-of-type(2)
+      animation: menu6 0.3s ease-in-out forwards
+      animation-delay: 0.4s
+
+    &:nth-of-type(3)
+      animation: menu6 0.3s ease-in-out forwards
+      animation-delay: 0.6s
+
+    &:last-of-type
+      animation: menu6 0.3s ease-in-out forwards
+      animation-delay: 0.8s
+
+@keyframes menu1
+  from
+    opacity: 0
+    transform: translateX(30px) rotateY(90deg)
+
+  to
+    opacity: 1
+    transform: translateX(0) rotateY(0)
+
+/*------------- menu2 animation -------------------
+
+@keyframes menu2
+  0%
+    opacity: 0
+    transform: scale(0.7)
+
+  50%
+    opacity: 0.5
+    transform: scale(1.1)
+
+  100%
+    opacity: 1
+    transform: scale(1)
+
+/*------------- menu3 animation -------------------
+
+@keyframes menu3
+  0%
+    opacity: 0
+    transform: translateX(20px)
+
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+/*------------- menu4 animation -------------------
+
+@keyframes menu4
+  0%
+    opacity: 0
+    transform: translateX(50px) rotate(-90deg)
+
+  100%
+    opacity: 1
+    transform: translateX(0) rotate(0)
+
+/*------------- menu5 animation -------------------
+
+@keyframes menu5
+  0%
+    opacity: 0
+    transform: rotateX(-90deg)
+
+  100%
+    opacity: 1
+    transform: rotateX(0)
+
+/*------------- menu6 animation -------------------
+
+@keyframes menu6
+  0%
+    opacity: 0
+    transform: scale(2)
+
+  100%
+    opacity: 1
+    transform: scale(1)
+
+/* my button style
+
+.white-mode
+  text-decoration: none
+  padding: 7px 10px
+  background-color: #122
+  border-radius: 3px
+  color: #fff
+  transition: 0.35s ease-in-out
+  position: absolute
+  left: 15px
+  bottom: 15px
+  font-family: sans-serif
+
+  &:hover
+    background-color: #fff
+    color: #122

@@ -27,12 +27,11 @@ body {
 }
 
 a {
-  color: #171A19;
+  color: #fff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #171A19;
   text-decoration: none;
 }
 
@@ -42,7 +41,7 @@ a:hover {
 }
 
 .header-background {
-  background-image: url(../res/img/fon-minimazizm-temnye.jpg);
+  background-image: url(../res/img/aluminum-backgrounds.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;

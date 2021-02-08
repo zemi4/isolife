@@ -138,387 +138,206 @@
   }
 }
 
-/** main menu **/
-ul {
-  list-style: none;
+
+/*------------- menu1 animation -------------------*/
+
+.menu li:hover .menu1 li:first-of-type {
+  animation: menu1 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
 }
 
-nav {
-  height: 40px;
-  margin: 40px auto;
-  text-align: center;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+.menu li:hover .menu1 li:nth-of-type(2) {
+  animation: menu1 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
 }
 
-.main {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.menu li:hover .menu1 li:nth-of-type(3) {
+  animation: menu1 0.3s ease-in-out forwards;
+  animation-delay: 0.9s;
 }
 
-.a-menu > a {
-  text-decoration: none;
-  color: #ffe;
-  text-transform: capitalize;
-  display: block;
-  padding: 10px 15px;
-  font-size: 16px;
-}
-
-.a-menu > a:hover {
-  background-color: #0a1b52;
-}
-
-.drop li {
-  opacity: 0;
-  -webkit-transform-origin: top center;
-      -ms-transform-origin: top center;
-          transform-origin: top center;
-}
-
-.drop li .a-menu > a {
-  background-color: rgba(23, 23, 50, 0.7);
-  padding: 10px 0;
-}
-
-/*------------- menu1 animation ------------------- */
-.main li:hover .menu1 li:first-of-type {
-  -webkit-animation: menu1 0.3s ease-in-out forwards;
-          animation: menu1 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.main li:hover .menu1 li:nth-of-type(2) {
-  -webkit-animation: menu1 0.3s ease-in-out forwards;
-          animation: menu1 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.main li:hover .menu1 li:nth-of-type(3) {
-  -webkit-animation: menu1 0.3s ease-in-out forwards;
-          animation: menu1 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
-.main li:hover .menu1 li:last-of-type {
-  -webkit-animation: menu1 0.3s ease-in-out forwards;
-          animation: menu1 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-.main li:hover .menu2 li:first-of-type {
-  -webkit-animation: menu2 0.3s ease-in-out forwards;
-          animation: menu2 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.main li:hover .menu2 li:nth-of-type(2) {
-  -webkit-animation: menu2 0.3s ease-in-out forwards;
-          animation: menu2 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.main li:hover .menu2 li:nth-of-type(3) {
-  -webkit-animation: menu2 0.3s ease-in-out forwards;
-          animation: menu2 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
-.main li:hover .menu2 li:last-of-type {
-  -webkit-animation: menu2 0.3s ease-in-out forwards;
-          animation: menu2 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-.main li:hover .menu3 li:first-of-type {
-  -webkit-animation: menu3 0.3s ease-in-out forwards;
-          animation: menu3 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.main li:hover .menu3 li:nth-of-type(2) {
-  -webkit-animation: menu3 0.3s ease-in-out forwards;
-          animation: menu3 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.main li:hover .menu3 li:nth-of-type(3) {
-  -webkit-animation: menu3 0.3s ease-in-out forwards;
-          animation: menu3 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
-.main li:hover .menu3 li:last-of-type {
-  -webkit-animation: menu3 0.3s ease-in-out forwards;
-          animation: menu3 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-.main li:hover .menu4 li:first-of-type {
-  -webkit-animation: menu4 0.3s ease-in-out forwards;
-          animation: menu4 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.main li:hover .menu4 li:nth-of-type(2) {
-  -webkit-animation: menu4 0.3s ease-in-out forwards;
-          animation: menu4 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.main li:hover .menu4 li:nth-of-type(3) {
-  -webkit-animation: menu4 0.3s ease-in-out forwards;
-          animation: menu4 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
-.main li:hover .menu4 li:last-of-type {
-  -webkit-animation: menu4 0.3s ease-in-out forwards;
-          animation: menu4 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-.main li:hover .menu5 li:first-of-type {
-  -webkit-animation: menu5 0.3s ease-in-out forwards;
-          animation: menu5 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.main li:hover .menu5 li:nth-of-type(2) {
-  -webkit-animation: menu5 0.3s ease-in-out forwards;
-          animation: menu5 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.main li:hover .menu5 li:nth-of-type(3) {
-  -webkit-animation: menu5 0.3s ease-in-out forwards;
-          animation: menu5 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
-.main li:hover .menu5 li:last-of-type {
-  -webkit-animation: menu5 0.3s ease-in-out forwards;
-          animation: menu5 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-.main li:hover .menu6 li:first-of-type {
-  -webkit-animation: menu6 0.3s ease-in-out forwards;
-          animation: menu6 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.main li:hover .menu6 li:nth-of-type(2) {
-  -webkit-animation: menu6 0.3s ease-in-out forwards;
-          animation: menu6 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.main li:hover .menu6 li:nth-of-type(3) {
-  -webkit-animation: menu6 0.3s ease-in-out forwards;
-          animation: menu6 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.main li:hover .menu6 li:last-of-type {
-  -webkit-animation: menu6 0.3s ease-in-out forwards;
-          animation: menu6 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-@-webkit-keyframes menu1 {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(30px) rotateY(90deg);
-            transform: translateX(30px) rotateY(90deg);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0) rotateY(0);
-            transform: translateX(0) rotateY(0);
-  }
+.menu li:hover .menu1 li:last-of-type {
+  animation: menu1 0.3s ease-in-out forwards;
+  animation-delay: 1.2s;
 }
 
 @keyframes menu1 {
   from {
     opacity: 0;
-    -webkit-transform: translateX(30px) rotateY(90deg);
-            transform: translateX(30px) rotateY(90deg);
+    transform: translateX(30px) rotateY(90deg);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0) rotateY(0);
-            transform: translateX(0) rotateY(0);
+    transform: translateX(0) rotateY(0);
   }
 }
 
-/*------------- menu2 animation ------------------- */
-@-webkit-keyframes menu2 {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-  50% {
-    opacity: 0.5;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+/*------------- menu2 animation -------------------*/
+
+.menu li:hover .menu2 li:first-of-type {
+  animation: menu2 0.3s ease-in-out forwards;
+  animation-delay: 0.2s;
 }
+
+.menu li:hover .menu2 li:nth-of-type(2) {
+  animation: menu2 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.menu li:hover .menu2 li:nth-of-type(3) {
+  animation: menu2 0.3s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+.menu li:hover .menu2 li:last-of-type {
+  animation: menu2 0.3s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
 @keyframes menu2 {
   0% {
     opacity: 0;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    transform: scale(0.7);
   }
   50% {
     opacity: 0.5;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
   100% {
     opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
-/*------------- menu3 animation ------------------- */
-@-webkit-keyframes menu3 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+/*------------- menu3 animation -------------------*/
+
+.menu li:hover .menu3 li:first-of-type {
+  animation: menu3 0.3s ease-in-out forwards;
+  animation-delay: 0.2s;
 }
+
+.menu li:hover .menu3 li:nth-of-type(2) {
+  animation: menu3 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.menu li:hover .menu3 li:nth-of-type(3) {
+  animation: menu3 0.3s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+.menu li:hover .menu3 li:last-of-type {
+  animation: menu3 0.3s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
 @keyframes menu3 {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    transform: translateX(20px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
-/*------------- menu4 animation ------------------- */
-@-webkit-keyframes menu4 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(50px) rotate(-90deg);
-            transform: translateX(50px) rotate(-90deg);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0) rotate(0);
-            transform: translateX(0) rotate(0);
-  }
+/*------------- menu4 animation -------------------*/
+
+.menu li:hover .menu4 li:first-of-type {
+  animation: menu4 0.3s ease-in-out forwards;
+  animation-delay: 0.2s;
 }
+
+.menu li:hover .menu4 li:nth-of-type(2) {
+  animation: menu4 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.menu li:hover .menu4 li:nth-of-type(3) {
+  animation: menu4 0.3s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+.menu li:hover .menu4 li:last-of-type {
+  animation: menu4 0.3s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
 @keyframes menu4 {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(50px) rotate(-90deg);
-            transform: translateX(50px) rotate(-90deg);
+    transform: translateX(50px) rotate(-90deg);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0) rotate(0);
-            transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
   }
 }
 
-/*------------- menu5 animation ------------------- */
-@-webkit-keyframes menu5 {
-  0% {
-    opacity: 0;
-    -webkit-transform: rotateX(-90deg);
-            transform: rotateX(-90deg);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-  }
+/*------------- menu5 animation -------------------*/
+
+.menu li:hover .menu5 li:first-of-type {
+  animation: menu5 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
 }
+
+.menu li:hover .menu5 li:nth-of-type(2) {
+  animation: menu5 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.menu li:hover .menu5 li:nth-of-type(3) {
+  animation: menu5 0.3s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
+.menu li:hover .menu5 li:last-of-type {
+  animation: menu5 0.3s ease-in-out forwards;
+  animation-delay: 1.2s;
+}
+
 @keyframes menu5 {
   0% {
     opacity: 0;
-    -webkit-transform: rotateX(-90deg);
-            transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
   }
   100% {
     opacity: 1;
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
+    transform: rotateX(0);
   }
 }
 
-/*------------- menu6 animation ------------------- */
-@-webkit-keyframes menu6 {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(2);
-            transform: scale(2);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+/*------------- menu6 animation -------------------*/
+
+.menu li:hover .menu6 li:first-of-type {
+  animation: menu6 0.3s ease-in-out forwards;
+  animation-delay: 0.2s;
 }
+
+.menu li:hover .menu6 li:nth-of-type(2) {
+  animation: menu6 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.menu li:hover .menu6 li:nth-of-type(3) {
+  animation: menu6 0.3s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+.menu li:hover .menu6 li:last-of-type {
+  animation: menu6 0.3s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
 @keyframes menu6 {
   0% {
     opacity: 0;
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
   }
   100% {
     opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -527,11 +346,8 @@ nav {
   text-decoration: none;
   padding: 7px 10px;
   background-color: #122;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
   color: #fff;
-  -webkit-transition: 0.35s ease-in-out;
-  -o-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
   position: absolute;
   left: 15px;

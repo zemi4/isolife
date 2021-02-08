@@ -40,8 +40,8 @@ a:hover {
   margin: auto;
 }
 
-.header-background {
-  background-image: url(../res/img/aluminum-backgrounds.jpg);
+.header-background-index {
+  background-image: url(../res/img/main2.jpeg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -218,7 +218,7 @@ a:hover {
 } */
 
 /* section 4 */
-.section-four {
+/* .section-four {
   position: relative;
   background: url(../res/img/aluminum-backgrounds.jpg) center no-repeat;
   -webkit-background-size: cover;
@@ -235,7 +235,7 @@ a:hover {
   background: rgba(255, 255, 255, 0.74);
   z-index: 4;
   opacity: 1;
-}
+} */
 
 .part-logo > img {
   position: relative;

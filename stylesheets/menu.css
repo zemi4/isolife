@@ -1,0 +1,121 @@
+/** main menu **/
+ul {
+    list-style: none;
+}
+
+nav {
+    height: 40px;
+    margin: 40px auto;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+li>.block-submenu {
+    position: absolute;
+    border-radius: 5px;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.menu>li:hover>.block-submenu {
+    position: absolute;
+    background-color: rgb(46, 45, 45);
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    clip: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    opacity: 0.9;
+    transition: all 0.5s;
+}
+
+.submenu {
+    text-align: start;
+}
+
+.menu li a::after,
+.submenu a::after {
+    background-color: #0a1b52;
+    display: block;
+    content: "";
+    height: 5px;
+    /* скользящая полоса */
+    width: 0%;
+    padding-top: 3px;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.menu li a:hover::after,
+.submenu a:hover::after {
+    width: 100%;
+    /* скользящая полоса */
+}
+
+.menu a {
+    display: block;
+    padding: 1em;
+    white-space: nowrap;
+}
+
+.menu>li:hover {
+    padding-bottom: 30px;
+}
+
+/* .submen > li:hover {
+    background-color: #0a1b529a;
+  } */
+
+.menu a:focus {
+    outline: none;
+    background-color: #0a1b52;
+    /* Tab */
+    border-radius: 10px;
+}
+
+/*  Фиксированое меню */
+#navbar {
+    background-color: #333; /* Черный цвет фона */
+    position: fixed; /* Сделайте его липким/фиксированным */
+    top: -50px; /* Скрыть панель навигации 50 пикселей за пределами верхнего вида */
+    width: 100%; /* Полная ширина */
+    transition: top 0.3s; /* Эффект перехода при скольжении вниз (и вверх) */
+    z-index: 9999;
+    height: 55px;
+  }
+  
+  /* Стиль ссылок навигационной панели */
+  #navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+/*   #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  } */

@@ -47,6 +47,7 @@ li>.block-submenu {
     margin: 0;
     opacity: 0.9;
     transition: all 0.5s;
+    font-style: italic;
 }
 
 .submenu {
@@ -98,7 +99,7 @@ li>.block-submenu {
 #navbar {
     background-color: #333; /* Черный цвет фона */
     position: fixed; /* Сделайте его липким/фиксированным */
-    top: -50px; /* Скрыть панель навигации 50 пикселей за пределами верхнего вида */
+    top: -60px; /* Скрыть панель навигации 50 пикселей за пределами верхнего вида */
     width: 100%; /* Полная ширина */
     transition: top 0.3s; /* Эффект перехода при скольжении вниз (и вверх) */
     z-index: 9999;

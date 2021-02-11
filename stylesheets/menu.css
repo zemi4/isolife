@@ -60,7 +60,6 @@ li>.block-submenu {
     display: block;
     content: "";
     height: 5px;
-    /* скользящая полоса */
     width: 0%;
     padding-top: 3px;
     -webkit-transition: width .3s ease-in-out;

@@ -10,6 +10,11 @@
 	<link href="stylesheets/carousel.css" rel="stylesheet">
 	<link href="stylesheets/flickity.css" rel="stylesheet" media="screen">
 	<link href="stylesheets/menu.css" rel="stylesheet" media="screen">
+
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	<script>
+        ScrollReveal({ reset: true });
+    </script>
 </head>
 
 <body>
@@ -151,7 +156,7 @@
 				</div>
 				<div class="wrapper">
 					<h1 class="wrapper-h1">
-						Упаковка и оборудование
+						Упаковка + оборудование
 					</h1>
 					<div class="wrapper-small-text">
 						Для всех видов еды
@@ -256,6 +261,18 @@
 			</div>
 		</div>
 	</section>
+
+	<script>
+		window.sr = new ScrollReveal()
+
+		sr.reveal('.wrapper-text', {
+			/* dalay: 3000, */
+			distance: "500px",
+			origin: "left",
+			/* scale: 0.2, */
+			duration: 3000
+		});
+	</script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>

@@ -24,6 +24,7 @@
 html,
 body {
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 a,
@@ -101,7 +102,7 @@ a:hover {
 }
 
 .main-header-title {
-  font-size: 100px;
+  font-size: 6.3rem;
   font-weight: 700;
 }
 
@@ -135,14 +136,14 @@ a:hover {
 
 .wrapper-h1 {
   padding-top: 30px;
-  font-size: 70px;
+  font-size: 4rem;
   text-shadow: 2px 1px 3px #2c2e8d;
 }
 
 .wrapper-text {
   padding: 30px 10px 10px 0px;
   opacity: 0.8;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 .wrapper-text li {
@@ -163,7 +164,7 @@ a:hover {
   -ms-grid-rows: 1fr 2fr;
   grid-template-rows: 1fr 2fr;
   color: #fff;
-  font-size: 80px;
+  font-size: 5rem;
 }
 
 .carousel {
@@ -240,7 +241,7 @@ a:hover {
   grid-area: a;
   align-self: center;
   justify-self: center;
-  font-size: 50px;
+  font-size: 3.2rem;
 }
 
 .part-logo {

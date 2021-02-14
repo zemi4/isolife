@@ -25,7 +25,7 @@ html,
 body {
   overflow-x: hidden;
   font-size: 16px;
-  position:relative;
+  /* position:relative; */
 }
 
 a,
@@ -122,13 +122,10 @@ a:hover {
   margin: 40px auto;
   max-width: 150px;
   height: auto;
+  opacity: 0.7;
 }
 
 /* section-two */
-/* .section-two{
-  z-index: 1;
-}
- */
 .section-background {
   display: -ms-grid;
   display: grid;
@@ -214,7 +211,7 @@ a:hover {
   padding: 50px;
 } */
 
-/* section 4 */
+/* section партнеры */
 .section-four {
   position: relative;
   background: url(../res/img/aluminum-backgrounds.jpg) center no-repeat;
@@ -235,10 +232,18 @@ a:hover {
 }
 
 .part-logo > img {
-  position: relative;
+  /* position: relative; */
   z-index: 6;
   padding: 20px;
   width: 250px;
+}
+
+.doma_logo{
+  margin-bottom: 15px;
+}
+
+.sosedi_logo {
+  margin-bottom: 5px;
 }
 
 .partners {
@@ -251,6 +256,8 @@ a:hover {
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
   grid-area: a;
   align-self: center;
   justify-self: center;
@@ -262,13 +269,22 @@ a:hover {
   align-self: center;
   justify-self: start;
 }
+.main-text {
+  
+  
+}
+
+.small-text {
+  
+  font-size: 1rem;
+}
 
 
 /* section-carousel */
 .section-carousel {
   background-color: rgb(0, 0, 0);
   padding: 2rem;
-  position: relative;
+  /* position: relative; */
 }
 
 .section-carousel-text {
@@ -344,6 +360,7 @@ a:hover {
   opacity: 1;
 }
 .item:hover {
+  transform: scale(1.03);
   -webkit-transform: scale(1.03);
   -moz-transform: scale(1.03);
   -o-transform: scale(1.03);
@@ -351,17 +368,26 @@ a:hover {
 }
 
 /* кнопка вверх */
-.to-up {
-  background-color: rgb(56, 9, 100);
-  width: 50px;
-  height: 50px;
-  border-radius: 100px 100px 20px 20px;
+#button-up{
+  display: none;	
+  opacity:0.5;
+  filter:alpha(opacity=50);
   position: fixed;
-  bottom: 28px;
-  right: 28px;
-  display: none;
-  z-index: 9999;
+  right: 20px;
+  bottom: 100px;			
+  color: #000;
+  transition: .3s;
+  z-index: 999;
+}
+ 
+#button-up:hover{
   cursor: pointer;
-  transition: 1s;
-  border: 2px solid #fff;
+  opacity: 1;
+  filter:alpha(opacity=100);
+  transition: .3s;
+}
+
+#button-up img {
+  width: 50px;
+  height: auto;
 }

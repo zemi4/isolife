@@ -65,6 +65,7 @@ li>.block-submenu {
     -webkit-transition: width .3s ease-in-out;
     -moz--transition: width .3s ease-in-out;
     transition: width .3s ease-in-out;
+    
 }
 
 .menu li a:hover::after,
@@ -77,6 +78,10 @@ li>.block-submenu {
     display: block;
     padding: 1em;
     white-space: nowrap;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), #6c757e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .menu>li:hover {

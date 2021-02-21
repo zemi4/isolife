@@ -17,26 +17,26 @@ window.sr = new ScrollReveal()
 
 sr.reveal('.wrapper-text-1', {
   /* dalay: 3000, */
-  distance: "500px",
+  distance: "150px",
   origin: "top",
   /* scale: 0.2, */
   duration: 2000
 });
 
 sr.reveal('.wrapper-text-2', {
-  distance: '500px',
+  distance: '150px',
   origin: 'right',
   duration: 2000
 });
 
 sr.reveal('.wrapper-text-3', {
-  distance: '500px',
+  distance: '150px',
   origin: 'bottom',
   duration: 2000
 });
 
 sr.reveal('.section-two .image', {
-  distance: '500px',
+  distance: '150px',
   origin: 'left',
   duration: 2000
 });
@@ -51,33 +51,36 @@ $(document).ready(function () {
       0: {
         items: 1
       },
-      600: {
+      300: {
+        items: 1
+      },
+      800: {
         items: 2
       },
-      1000: {
+      1200: {
         items: 3
-      }
+      },
     }
   });
 });
 
 
 /* кнопка вверх */
-$(document).ready(function () {
-  var button = $('#button-up');
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-      button.fadeIn();
-    } else {
-      button.fadeOut();
+$('body').append('<div class="upbtn"></div>');
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+        $('.upbtn').css({
+            transform: 'scale(1)'
+        });
+        } else {
+        $('.upbtn').css({
+            transform: 'scale(0)'
+        });
     }
-  });
-  button.on('click', function () {
-    $('body, html').animate({
-      scrollTop: 0
-    }, 800);
-    return false;
-  });
 });
-
-
+$('.upbtn').on('click',function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 500);
+    return false;
+});

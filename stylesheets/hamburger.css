@@ -1,4 +1,4 @@
-html {
+/* html {
     font-family: "Lato", sans-serif;
 }
 
@@ -13,9 +13,9 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
+} */
 
-.msg {
+/* .msg {
     font-family: "Pacifico", cursive;
     font-size: 8vw;
     display: flex;
@@ -27,6 +27,12 @@ ul {
     align-items: center;
     color: #FEFEFE;
     background-color: #1184F0;
+} */
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none !important;
+    }
 }
 
 .features {
@@ -57,7 +63,7 @@ ul {
     transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
     border-bottom-left-radius: 100vw;
     background-color: #3d88ce;
-    background-color: rgba(12, 106, 194, 0.8);
+    background-color: rgba(39, 40, 41, 0.8);
 }
 
 @media (min-width: 768px) {
@@ -110,7 +116,7 @@ ul {
 .drawer-list li a:hover {
     cursor: pointer;
     background-color: #88c2f8;
-    background-color: rgba(17, 132, 240, 0.5);
+    background-color: rgba(147, 148, 149, 0.5);
 }
 
 input.hamburger {

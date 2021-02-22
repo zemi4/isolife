@@ -1,30 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
-
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-* {
-  font-family: 'Play', sans-serif;
-  padding: 0px;
-  margin: 0px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: 'Play-Regular';
-  src: url("../fonts/Play-Regular.ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-html,
-body {
-  overflow-x: hidden;
-}
 
 .header-background-equipment {
   background-image: url(../res/img/vakyym.jpg);
@@ -35,36 +8,84 @@ body {
   height: 100vh;
 }
 
-section {
-  width: 100%;
-  height: 100vh;
-  box-sizing: border-box;
+
+.country-equipment-manufacturer {
+  display: flex;
+  justify-content: center;
 }
-section.sec1 {
-  background: url(../res/equipment/oceania.webp) no-repeat center;
-  background-attachment: fixed;
+
+.country-equipment-manufacturer a {
+  color: #000;
+  margin: 6rem;
 }
-section.sec2 {
-  background: url(../res/equipment/poseidon-jolly-.jpg) no-repeat center;
-  background-attachment: fixed;
+
+.equipment {
+  background-color: #fff;
 }
-section.sec3 {
-  background: url(../res/equipment/poseidon-mini.jpg)no-repeat center;
-  background-attachment: fixed;
-}
-section.sec4 {
-  background: url(../res/equipment/gastronorme.jpg)no-repeat center;
-  background-attachment: fixed;
-}
-.sec-text {
-  padding: 4% 8%;
+
+.box-scrollme {
+  display: flex;
   height: auto;
+  width: 100%;
+  /* justify-content: center; */
+
 }
-.sec-text__title {
-  margin: 0;
-  padding: 0;
-  font-size: 2em;
+
+.scrollme {
+  display: flex;
+  /* align-items: center; */
+  width: 50%;
 }
-.sec-text__dsc {
-  font-size: 1em;
+
+.scrollme-text .animateme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  height: 100%;
+}
+
+.scrollme-text .main-text {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 3rem;
+}
+
+.scrollme-text .small-text {
+  height: 50%;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+ /*  width: 50%;
+  margin: auto; */
+}
+
+.animateme {
+  width: 100%;
+  height: auto;
+  margin: 20px;
+/*   background-color: #000; */
+}
+
+
+hr {
+  height: 15px;
+  margin: 3px 0 2rem 0;
+  width: 100%;
+  background-image: radial-gradient(farthest-side at 50% -50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  position: relative;
+  border: none;
+}
+hr:before {
+  height: 1px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0));
 }

@@ -70,8 +70,8 @@ button:focus {
 
 a:hover {
   background-size: 100% 2px;
-} */
-
+}
+ */
 .container {
   max-width: 1500px;
   margin: auto;
@@ -97,6 +97,10 @@ a:hover {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.header-logo a{
+  background-image:none;
 }
 
 @media (max-width: 768px) {

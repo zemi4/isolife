@@ -6,7 +6,7 @@ footer {
     height: 245px;
     color: #ccc;
     font-size: 12px;
-
+    display: flex;
     position: relative;
     z-index: 1;
 
@@ -20,7 +20,7 @@ footer {
 /* Установите ширину самого крайнего UL’а, отцентрируйте его и зафиксируйте относительно окна */
 
 footer>ul {
-    width: 960px;
+    width: 65rem;
     position: relative;
     left: 50%;
     bottom: 0;

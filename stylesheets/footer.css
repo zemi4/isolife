@@ -1,11 +1,11 @@
 .footer{
-    padding-top: 50px;
+    padding-top: 3.125rem;
 }
 
 footer {
-    height: 245px;
+    height: 15,3125rem;
     color: #ccc;
-    font-size: 12px;
+    font-size: 0.75rem;
     display: flex;
     position: relative;
     z-index: 1;
@@ -24,8 +24,8 @@ footer>ul {
     position: relative;
     left: 50%;
     bottom: 0;
-    margin-left: -480px;
-    padding-bottom: 60px;
+    margin-left: -30rem;
+    padding-bottom: 3.75rem;
     z-index: 1;
 }
 
@@ -43,7 +43,7 @@ footer ul {
 /* Ссылки */
 
 footer>ul>li ul li {
-    margin-left: 43px;
+    margin-left: 2,6875rem;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 1.8;
@@ -64,48 +64,48 @@ footer>ul>li ul li a:hover {
 footer a.logo {
     color: #e4e4e4 !important;
     text-decoration: none !important;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: bold;
     position: relative;
     text-transform: uppercase;
-    margin-left: 16px;
+    margin-left: 1rem;
     display: inline-block;
-    margin-top: 7px;
+    margin-top: 0.4375rem;
 }
 
 footer a.logo i {
     font-style: normal;
     position: absolute;
-    width: 60px;
+    width: 3.75rem;
     display: block;
-    left: 48px;
-    top: 18px;
-    font-size: 12px;
+    left: 3rem;
+    top: 1.125rem;
+    font-size: 0.75rem;
     color: #999;
 }
 
 footer a.logo:before {
     content: '';
     display: inline-block;
-    background: url('../res/logo/isolife_logo.png') no-repeat -19px -70px;
-    width: 48px;
-    height: 37px;
+    background: url('../res/logo/isolife_logo.png') no-repeat -1.1875rem -4.375rem;
+    width: 3rem;
+    height: 2.3125rem;
     vertical-align: text-top;
 }
 
 footer p {
     width: 90%;
     margin-right: 10%;
-    padding: 9px 0;
-    line-height: 18px;
+    padding: 0.5625rem 0;
+    line-height: 1.125rem;
     background-color: #058cc7;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #fff;
     text-transform: uppercase;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
+    text-shadow: 0 0.0625rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.25rem;
     opacity: 0.9;
     cursor: default;
 
@@ -123,9 +123,9 @@ footer p:before {
     content: '';
     display: inline-block;
     background: url('../res/logo/isolife_logo.png') no-repeat;
-    width: 16px;
-    height: 18px;
-    margin: 0 12px 0 15px;
+    width: 1rem;
+    height: 1.125rem;
+    margin: 0 0.75rem 0 0.9375rem;
     vertical-align: text-bottom;
 }
 
@@ -138,7 +138,7 @@ footer p.home {
 }
 
 footer p.home:before {
-    background-position: 0 -110px;
+    background-position: 0 -6.875rem;
 }
 
 footer p.services {
@@ -150,7 +150,7 @@ footer p.services {
 }
 
 footer p.services:before {
-    background-position: 0 -129px;
+    background-position: 0 -8.0625rem;
 }
 
 footer p.reachus {
@@ -162,7 +162,7 @@ footer p.reachus {
 }
 
 footer p.reachus:before {
-    background-position: 0 -89px;
+    background-position: 0 -5.5625rem;
 }
 
 footer p.clients {
@@ -174,5 +174,5 @@ footer p.clients {
 }
 
 footer p.clients:before {
-    background-position: 0 -69px;
+    background-position: 0 -4.3125rem;
 }

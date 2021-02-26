@@ -28,10 +28,32 @@ body {
   /* position:relative; */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 479px){
   html,
   body {
-      font-size: 12px !important;
+      font-size: 4px;
+      overflow-x: hidden;
+  }  
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  html,
+  body {
+      font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  html,
+  body {
+      font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1920) {
+  html,
+  body {
+      font-size: 16px;
   }
 }
 
@@ -54,13 +76,13 @@ button:focus {
     outline: none;
 }
 
-/* a {
+a {
   color: #fff;
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 0% 2px;
+  background-size: 0% 0.125rem;
   transition: background-size 0.3s ease-in;
   -moz-transition: background-size 0.3s ease-in;
   -ms-transition: background-size 0.3s ease-in;
@@ -71,9 +93,9 @@ button:focus {
 a:hover {
   background-size: 100% 2px;
 }
- */
+
 .container {
-  max-width: 1500px;
+  max-width: 93.75rem;
   margin: auto;
 }
 
@@ -140,7 +162,7 @@ a:hover {
 }
 
 .main-header-title {
-  font-size: 6.3rem;
+  font-size: 4rem;
   font-weight: 700;
   background: -webkit-linear-gradient(rgb(255, 255, 255), #6c757e);
   background-clip: text;
@@ -149,9 +171,11 @@ a:hover {
 }
 
 .main-header-subtitle {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
+/*   display: flex;
+  justify-content: flex-end; */
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.125rem;
   background: -webkit-linear-gradient(rgb(255, 255, 255), #6c757e);
   background-clip: text;
   -webkit-background-clip: text;
@@ -159,9 +183,10 @@ a:hover {
 }
 
 .header-logo > img {
+  width: 90%;
   position: relative;
-  margin: 40px auto;
-  max-width: 150px;
+  margin: 2.5rem auto;
+  max-width: 9.375rem;
   height: auto;
   opacity: 0.7;
   z-index: 3;
@@ -179,7 +204,10 @@ a:hover {
 .image {
   -ms-grid-column-align: end;
   justify-self: end;
-  
+}
+
+.image img {
+  width: 100%;
 }
 
 .wrapper {
@@ -188,28 +216,28 @@ a:hover {
 }
 
 .wrapper-h1 {
-  padding-top: 30px;
+  padding-top: 1.875rem;
   font-size: 4rem;
-  text-shadow: 2px 1px 3px #2c2e8d;
+  text-shadow: 0.125rem 0.0625rem 0.1875rem #2c2e8d;
 }
 
 .wrapper-text {
-  padding: 30px 10px 10px 0px;
+  padding: 1.875rem 0.625rem 0.625rem 0rem;
   opacity: 0.8;
-  font-size: 1.3rem;
+  font-size: 1rem;
   
 }
 
 .wrapper-text li {
-  padding: 20px 20px 20px 0px
+  padding: 1.25rem 1.25rem 1.25rem 0rem;
   
 }
 
 .wrapper-small-text {
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   opacity: 0.5;
-  font-size: 13px;
-  padding: 10px 10px 10px 0px;
+  font-size: 0.82rem;
+  padding: 0.625rem 0.625rem 0.625rem 0rem;
 }
 
 /** section-carousel **/
@@ -279,22 +307,22 @@ a:hover {
 .part-logo > img {
   /* position: relative; */
   z-index: 6;
-  padding: 20px;
+  padding: 1.25rem;
   width: 11rem;
 }
 
 .doma_logo{
-  margin-bottom: 15px;
+  margin-bottom: 0.937rem;
 }
 
 .sosedi_logo {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 .partners {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 0.625rem;
   grid-template-areas:'a b';
   position: relative;
   z-index: 6;
@@ -347,10 +375,10 @@ a:hover {
 .item {
   position: relative;
   text-align: center;
-  height: 300px;
+  height: 18.75rem;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   display: flex;
   justify-content: center;
   align-items: center;       /* выравнивание по вертикали */
@@ -414,14 +442,14 @@ a:hover {
 /* кнопка вверх */
 .upbtn {
   z-index: 9999;
-  width: 70px;
-  height: 70px;
+  width: 4.375rem;
+  height: 4.375rem;
   color: #FFF;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1.25rem;
+  right: 1.25rem;
   cursor: pointer;
-  border:3px solid #BFE2FF;
+  border: 0.1875rem solid #BFE2FF;
   border-radius:50%;
   transform: scale(0);
   transition: all .7s ease-in-out;

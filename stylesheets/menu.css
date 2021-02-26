@@ -4,11 +4,11 @@ ul {
 }
 
 nav {
-    height: 40px;
-    margin: 40px auto;
+    height: 2.5rem;
+    margin: 2.5rem auto;
     text-align: center;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: 0.25rem;
+    border-radius: 0.25rem;
 }
 
 .menu {
@@ -28,11 +28,11 @@ nav {
 
 li>.block-submenu {
     position: absolute;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    margin: -0.0625rem;
 }
 
 .menu>li:hover>.block-submenu {
@@ -40,28 +40,28 @@ li>.block-submenu {
     background-color: rgb(46, 45, 45);
     top: 70%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%);             /* выравнивоние по центру */
     clip: auto;
     width: auto;
     height: auto;
     margin: 0;
     opacity: 0.9;
     transition: all 0.5s;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .submenu {
     text-align: start;
 }
-
+/* скользящая полоса */
 .menu li a::after,
 .submenu a::after {
-    background-color: #162e7e;
+    background-color: #eee8e8;
     display: block;
     content: "";
-    height: 3px;
+    height: 0.0625rem;
     width: 0%;
-    padding-top: 3px;
+    padding-top: 0.0625rem;
     -webkit-transition: width .3s ease-in-out;
     -moz--transition: width .3s ease-in-out;
     transition: width .3s ease-in-out;
@@ -70,22 +70,21 @@ li>.block-submenu {
 
 .menu li a:hover::after,
 .submenu a:hover::after {
-    width: 100%;
-    /* скользящая полоса */
+    width: 100%; 
 }
 
 .menu a {
     display: block;
     padding: 1em;
     white-space: nowrap;
-    background: -webkit-linear-gradient(rgb(255, 255, 255), #6c757e);
+    background: -webkit-linear-gradient(rgb(255, 255, 255), #9299a0);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .menu>li:hover {
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
 }
 
 /* .submen > li:hover {
@@ -96,7 +95,7 @@ li>.block-submenu {
     outline: none;
     background-color: #0a1b52;
     /* Tab */
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 /*  Фиксированое меню */
@@ -105,14 +104,14 @@ li>.block-submenu {
     /* Черный цвет фона */
     position: fixed;
     /* Сделайте его липким/фиксированным */
-    top: -60px;
+    top: -3.75rem;
     /* Скрыть панель навигации 50 пикселей за пределами верхнего вида */
     width: 100%;
     /* Полная ширина */
     transition: top 0.3s;
     /* Эффект перехода при скольжении вниз (и вверх) */
     z-index: 9999;
-    height: 55px;
+    height: 3.4375rem;
 }
 
 /* Стиль ссылок навигационной панели */
@@ -121,7 +120,7 @@ li>.block-submenu {
     display: block;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 0.9375rem;
     text-decoration: none;
 }
 

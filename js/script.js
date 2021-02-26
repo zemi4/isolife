@@ -17,29 +17,33 @@ window.sr = new ScrollReveal()
 
 sr.reveal('.wrapper-text-1', {
   /* dalay: 3000, */
-  distance: "150px",
+  distance: "9.375rem",
   origin: "top",
   /* scale: 0.2, */
   duration: 2000
 });
 
 sr.reveal('.wrapper-text-2', {
-  distance: '150px',
-  origin: 'right',
-  duration: 2000
+  scale: 0.2,
+  duration: 3000
 });
 
 sr.reveal('.wrapper-text-3', {
-  distance: '150px',
+  distance: '9.375rem',
   origin: 'bottom',
   duration: 2000
 });
 
 sr.reveal('.section-two .image', {
-  distance: '150px',
+  scale: 0.2,
+  duration: 3000
+});
+
+/* sr.reveal('.section-two .image', {
+  distance: '2rem',
   origin: 'left',
   duration: 2000
-});
+}); */
 
 /*   карусель */
 $(document).ready(function () {
@@ -52,7 +56,7 @@ $(document).ready(function () {
         items: 1
       },
       300: {
-        items: 1
+        items: 2
       },
       800: {
         items: 2

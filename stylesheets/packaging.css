@@ -126,6 +126,10 @@
     padding: 2.5rem;
 }
 
+.block-packaging a {
+    background-image: none;
+}
+
 .box {
     position: relative;
     overflow: hidden;

@@ -3,12 +3,13 @@
 }
 
 footer {
-    height: 15,3125rem;
+    height: auto;
     color: #ccc;
-    font-size: 0.75rem;
-    display: flex;
+    font-size: 0.8rem;
+    /* display: flex; */
     position: relative;
     z-index: 1;
+    width: 100%;
 
     background-color: #31353a;
 
@@ -20,11 +21,14 @@ footer {
 /* Установите ширину самого крайнего UL’а, отцентрируйте его и зафиксируйте относительно окна */
 
 footer>ul {
-    width: 65rem;
-    position: relative;
-    left: 50%;
-    bottom: 0;
-    margin-left: -30rem;
+    display: flex;
+    justify-content: space-evenly;
+    /* min-width: 1268px; */
+    flex-wrap: nowrap;
+    /* position: relative; */
+    /* left: 50%;
+    bottom: 0; */
+    /* margin-left: -30rem; */
     padding-bottom: 3.75rem;
     z-index: 1;
 }
@@ -32,8 +36,8 @@ footer>ul {
 /* Четыре колонки ссылок */
 
 footer>ul>li {
-    width: 25%;
-    float: left;
+    width: 20%;
+    /* float: left; */
 }
 
 footer ul {
@@ -52,7 +56,7 @@ footer>ul>li ul li {
 footer>ul>li ul li a {
     text-decoration: none !important;
     color: #7d8691 !important;
-}
+} 
 
 footer>ul>li ul li a:hover {
     color: #ddd !important;
@@ -64,6 +68,7 @@ footer>ul>li ul li a:hover {
 footer a.logo {
     color: #e4e4e4 !important;
     text-decoration: none !important;
+    background-image: none;
     font-size: 0.875rem;
     font-weight: bold;
     position: relative;
@@ -87,7 +92,7 @@ footer a.logo i {
 footer a.logo:before {
     content: '';
     display: inline-block;
-    background: url('../res/logo/isolife_logo.png') no-repeat -1.1875rem -4.375rem;
+    background: url('/res/logo/isolife_logo1.png') no-repeat -1.1875rem -4.375rem;
     width: 3rem;
     height: 2.3125rem;
     vertical-align: text-top;

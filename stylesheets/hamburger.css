@@ -59,7 +59,7 @@ ul {
     -ms-transform: translatex(-100vw);
     box-sizing: border-box;
     pointer-events: none;
-    padding-top: 7.8125rem;
+    padding-top: 125px;
     transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
     border-bottom-left-radius: 100vw;
     background-color: #3d88ce;
@@ -103,7 +103,7 @@ ul {
     text-align: center;
     display: block;
     padding: 1rem;
-    font-size: calc(1.5rem - .5vw);
+    font-size: calc(24px - .5vw);
 }
 
 @media (min-width: 768px) {
@@ -333,7 +333,7 @@ input.hamburger:checked~.drawer-list li:nth-child(50) {
 }
 
 input.hamburger:checked~.drawer-list li a {
-    padding-right: 0.9375rem;
+    padding-right: 15px;
 }
 
 input.hamburger:checked~label>i {
@@ -363,8 +363,8 @@ label.hamburger {
     z-index: 9999;
     position: relative;
     display: block;
-    height: 3.125rem;
-    width: 3.125rem;
+    height: 50px;
+    width: 50px;
 }
 
 label.hamburger:hover {
@@ -374,10 +374,10 @@ label.hamburger:hover {
 label.hamburger text close,
 label.hamburger text open {
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 1.5rem;
     align-text: center;
     position: absolute;
-    transform: translateY(3.125rem);
+    transform: translateY(50px);
     text-align: center;
     overflow: hidden;
     transition: width 0.25s 0.35s, color 0.45s 0.35s;
@@ -387,6 +387,7 @@ label.hamburger text close {
     color: rgba(0, 0, 0, 0);
     right: 0;
     width: 0;
+    font-size: 1.5rem;
 }
 
 label.hamburger text open {
@@ -397,7 +398,7 @@ label.hamburger text open {
 label.hamburger>i {
     position: absolute;
     width: 100%;
-    height: 0.125rem;
+    height: 2px;
     top: 50%;
     background-color: #FEFEFE;
     pointer-events: auto;
@@ -410,7 +411,7 @@ label.hamburger>i:after {
     position: absolute;
     display: block;
     width: 100%;
-    height: 0.125rem;
+    height: 2px;
     left: 50%;
     background-color: #FEFEFE;
     content: "";
@@ -419,17 +420,17 @@ label.hamburger>i:after {
 }
 
 label.hamburger>i:before {
-    transform: translate(-50%, -0.875rem);
+    transform: translate(-50%, -14px);
 }
 
 label.hamburger>i:after {
-    transform: translate(-50%, 0.875rem);
+    transform: translate(-50%, 14px);
 }
 
 label.hamburger {
     position: fixed;
-    top: 0.9375rem;
-    right: 0.9375rem;
+    top: 15px;
+    right: 15px;
 }
 
 /**

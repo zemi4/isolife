@@ -1,0 +1,9 @@
+.header-background-sushi {
+    background-image: url(../res/img/sushi.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+  }

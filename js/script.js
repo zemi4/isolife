@@ -17,10 +17,8 @@ window.sr = new ScrollReveal()
 
 sr.reveal('.wrapper-text-1', {
   /* dalay: 3000, */
-  distance: "9.375rem",
-  origin: "top",
-  /* scale: 0.2, */
-  duration: 2000
+  scale: 1.2,
+  duration: 3000
 });
 
 sr.reveal('.wrapper-text-2', {
@@ -29,9 +27,8 @@ sr.reveal('.wrapper-text-2', {
 });
 
 sr.reveal('.wrapper-text-3', {
-  distance: '9.375rem',
-  origin: 'bottom',
-  duration: 2000
+  scale: 1.2,
+  duration: 3000
 });
 
 sr.reveal('.section-two .image', {
